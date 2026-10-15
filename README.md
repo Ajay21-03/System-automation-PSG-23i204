@@ -19,6 +19,68 @@ IICC is a full-stack industrial monitoring platform that:
 
 ---
 
+## Screenshots
+
+### 1. Command Center Dashboard
+> The main landing page showing real-time KPI cards, daily condition trend chart (Normal / Warning / Failure stacked area), health distribution pie chart, and API/model status indicators. All metrics are calculated from actual backend data — 5 machines monitored, 5,000 sensor records, 493 predicted failures, 91 integrity alerts.
+
+![Command Center Dashboard](docs/screenshots/01_dashboard.png)
+
+---
+
+### 2. Machine Fleet
+> Grid view of all 5 robotic arms with live status badges (Safe / Warning / Emergency Stop), key sensor readings (Temperature, Vibration, Torque), sensor integrity status, and last reading timestamp. ARM-005 is flagged as **Warning** and ARM-001 shows a **suspicious** integrity status. Click any card to drill into the machine detail view.
+
+![Machine Fleet](docs/screenshots/02_fleet.png)
+
+---
+
+### 3. Live Sensor Monitoring
+> Real-time sensor panel for ARM-001 (Elbow joint) showing the 6 sensor metrics as live tiles with colour-coded severity states. The time-series chart plots 100 consecutive readings. Clearly labelled as **Historical Data Replay** — not live hardware acquisition. Supports arm/joint filters and an auto-refresh mode (5-second interval).
+
+![Sensor Monitoring](docs/screenshots/03_monitoring.png)
+
+---
+
+### 4. Predictive Analytics (ML Model)
+> Full ML analytics workspace: Random Forest classifier trained on 5,000 synthetic records. Shows accuracy, macro F1, macro precision, macro recall, per-class metrics table, confusion matrix with diagonal highlighting, and a horizontal feature-importance bar chart. Torque and RPM are the top predictive features. Disclosure banner confirms this is synthetic-data evaluation only.
+
+![Predictive Analytics](docs/screenshots/04_analytics.png)
+
+---
+
+### 5. Maintenance Intelligence
+> Maintenance case tracker with filter tabs (All / Open / Acknowledged / Scheduled / Resolved). Each case shows machine ID, joint, decision type, severity badge, priority, and an inline status dropdown for real-time updates. Cases are deduplicated — no duplicates generated on page refresh.
+
+![Maintenance Intelligence](docs/screenshots/05_maintenance.png)
+
+---
+
+### 6. Rule Engine — Automation
+> The Sense → Think → Act → Log workflow visualised as four step cards. Below, all 6 critical safety rules are listed with sensor name, threshold operator, EMERGENCY_STOP action badge, and live trigger count. A red safety-layer independence notice explains that emergency-stop logic runs before ML and cannot be overridden by the dashboard.
+
+![Rule Engine](docs/screenshots/06_rule_engine.png)
+
+---
+
+### 7. Event & Audit Logs
+> Searchable, paginated audit log showing 14 structured events: security simulations, maintenance case updates, decision evaluations (with Emergency Stop badge), ML predictions, model training, and dataset generation. Supports event-type filter and one-click CSV export.
+
+![Audit Logs](docs/screenshots/07_audit_logs.png)
+
+---
+
+### 8. Dataset & Model Lab
+> Data management workspace: generate up to 50,000 synthetic rows, validate the schema, and train the model — all from a single panel. Shows total rows (5,000), 13 columns, 0 missing values, 0 duplicates. Class distribution bar chart confirms the realistic imbalance: ~3,283 Normal, ~1,224 Warning, ~493 Failure.
+
+![Dataset & Model Lab](docs/screenshots/08_data_lab.png)
+
+---
+
+> **Note:** To add screenshots, save your PNG images to `docs/screenshots/` with the filenames shown above (e.g. `01_dashboard.png`, `02_fleet.png`, ..., `08_data_lab.png`). GitHub will render them automatically.
+
+---
+
 ## Quick Start (Windows PowerShell)
 
 ### 1 — Open the project directory
@@ -147,6 +209,9 @@ FinalAssigment(oneCredit)/
 │   ├── package.json
 │   └── vite.config.ts           # Proxy: /api → http://localhost:5000
 │
+├── docs/
+│   └── screenshots/             # UI screenshots (01–08)
+│
 └── README.md
 ```
 
@@ -267,11 +332,9 @@ python scripts\bootstrap.py
 
 ```powershell
 cd "D:\Downloads\FinalAssigment(oneCredit)"
-git init
-git remote add origin https://github.com/Ajay21-03/System-automation-PSG-23i204.git
-git add .
-git commit -m "feat: complete IICC platform - sensor monitoring, ML, NLP, security, 12-page UI"
-git push -u origin main
+git add docs/screenshots/
+git commit -m "docs: add UI screenshots to README"
+git push -u origin master
 ```
 
 ---
