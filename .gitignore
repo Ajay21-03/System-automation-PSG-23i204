@@ -19,7 +19,8 @@ backend/data/sensor_data.csv
 backend/data/iicc.db
 backend/data/audit_log.jsonl
 backend/models_ml/random_forest_model.joblib
-backend/models_ml/model_metrics.json
+# model_metrics.json is small and useful — include it
+# backend/models_ml/model_metrics.json
 
 # Keep the maintenance log and data directory itself
 !backend/data/.gitkeep
