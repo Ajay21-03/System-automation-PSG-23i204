@@ -1,0 +1,18 @@
+﻿timestamp,temperature,pressure,vibration,current,rpm,status,severity,action_taken
+2026-10-11 15:45:00,64.20,5.10,2.10,11.80,1820,NORMAL,Normal,Status Normal. Routine operational log maintained.
+2026-10-11 15:50:00,85.50,5.00,2.30,12.20,1790,OVERHEATING,Failure,Urgent Alert: Overheating detected (>70C). Inspect coolant flow and throttle motor.
+2026-10-11 15:55:00,62.10,2.40,2.00,11.50,1810,LOW_PRESSURE,Warning,Warning: Low line pressure detected (<4.0 bar). Check compressor and valves.
+2026-10-11 16:26:17,63.50,5.10,2.00,11.50,1820,NORMAL,Normal,Routine operational log maintained. All telemetry parameters within safe design limits.
+2026-10-11 16:26:17,68.00,4.33,1.90,14.31,2002,NORMAL,Normal,Routine operational log maintained. All telemetry parameters within safe design limits.
+2026-10-11 16:28:22,86.40,5.10,2.30,12.00,1800,OVERHEATING,Failure,CRITICAL ALERT: Machine temperature exceeded 70┬░C threshold. Schedule thermal stabilization.
+2026-10-11 16:28:32,66.05,4.83,3.33,14.42,2152,NORMAL,Normal,Routine operational log maintained. All telemetry parameters within safe design limits.
+2026-10-11 16:32:21,66.05,4.83,3.33,14.42,2152,NORMAL,Normal,Routine operational log maintained. All telemetry parameters within safe design limits.
+2026-10-11 16:32:28,66.05,4.83,3.33,14.42,2152,NORMAL,Normal,Routine operational log maintained. All telemetry parameters within safe design limits.
+2026-10-11 16:33:01,95.00,4.83,3.33,14.42,2152,OVERHEATING,Failure,CRITICAL ALERT: Machine temperature exceeded 70┬░C threshold. Schedule thermal stabilization.
+2026-10-11 16:35:41,63.50,5.20,2.10,11.80,1820,NORMAL,Normal,Routine operational log maintained. All telemetry parameters within safe design limits.
+2026-10-11 16:35:45,64.00,5.00,7.40,11.50,1780,HIGH_VIBRATION,Failure,CRITICAL ALERT: Excessive vibration (> 3.5 mm/s) detected. High risk of bearing or shaft damage.
+2026-10-11 16:56:41,63.50,5.20,2.10,11.80,1820,NORMAL,Normal,Routine operational log maintained. All telemetry parameters within safe design limits.
+2026-10-11 16:56:50,62.00,2.40,2.20,12.10,1810,LOW_PRESSURE,Warning,"Inspection Warning: Pressure dropped below 4.0 bar. Inspect supply lines, compressor, and check-valves."
+2026-10-11 17:16:04,62.00,2.40,2.20,12.10,1810,LOW_PRESSURE,Warning,"Inspection Warning: Pressure dropped below 4.0 bar. Inspect supply lines, compressor, and check-valves."
+2026-10-11 17:16:28,95.00,2.40,2.20,12.10,1810,LOW_PRESSURE,Warning,"Inspection Warning: Pressure dropped below 4.0 bar. Inspect supply lines, compressor, and check-valves."
+2026-10-11 17:16:37,86.40,5.10,2.30,12.00,1800,OVERHEATING,Failure,CRITICAL ALERT: Machine temperature exceeded 70┬░C threshold. Schedule thermal stabilization.

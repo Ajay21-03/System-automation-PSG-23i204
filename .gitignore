@@ -1,4 +1,4 @@
-# Python
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
@@ -14,24 +14,21 @@ build/
 .coverage
 htmlcov/
 
-# Data & model artifacts (large files — regenerate locally)
-backend/data/sensor_data.csv
-backend/data/iicc.db
-backend/data/audit_log.jsonl
-backend/models_ml/random_forest_model.joblib
-# model_metrics.json is small and useful — include it
-# backend/models_ml/model_metrics.json
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.vite/
+**/.vite/
 
-# Keep the maintenance log and data directory itself
-!backend/data/.gitkeep
-!backend/models_ml/.gitkeep
+# ── Data & large generated artifacts (regenerate locally) ─────────────────────
+**/data/sensor_data.csv
+**/data/iicc.db
+**/data/audit_log.jsonl
+**/models_ml/random_forest_model.joblib
 
-# Node / Frontend
-frontend/node_modules/
-frontend/dist/
-frontend/.vite/
-
-# IDE / OS
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.DS_Store
@@ -39,7 +36,7 @@ Thumbs.db
 *.swp
 *.swo
 
-# Secrets (never commit)
+# ── Secrets ───────────────────────────────────────────────────────────────────
 .env
 .env.local
 *.secret
